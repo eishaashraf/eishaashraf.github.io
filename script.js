@@ -47,6 +47,12 @@ const projectGalleries = {
     ['https://raw.githubusercontent.com/eishaashraf/AI-Health-Assistant/main/screenshots/imaging.png.png', 'Medical imaging guide'],
     ['https://raw.githubusercontent.com/eishaashraf/AI-Health-Assistant/main/screenshots/lifestyle.png.png', 'Lifestyle support'],
     ['https://raw.githubusercontent.com/eishaashraf/AI-Health-Assistant/main/screenshots/firstaid.png.png', 'First-aid guidance']
+  ],
+  'NeuroRecover AI': [
+    ['/assets/project-images/neuro-gallery.jpg', 'NeuroRecover AI interface gallery']
+  ],
+  'Magnetic Nanoparticles in Cancer Therapy and Drug Delivery': [
+    ['/assets/project-images/magnetic-gallery.jpg', 'Magnetic nanoparticle project figures and results']
   ]
 };
 
@@ -92,6 +98,8 @@ galleryStyle.textContent = `
 .project-gallery-item img{display:block;width:100%;height:105px;object-fit:cover;transition:transform .25s ease}
 .project-gallery-item span{position:absolute;left:8px;bottom:8px;padding:4px 7px;border-radius:8px;background:rgba(19,34,56,.86);color:#fff;font-size:10px;font-weight:600;line-height:1.2}
 .project-gallery-item:hover img{transform:scale(1.04)}
-@media(max-width:520px){.project-gallery{grid-template-columns:1fr}.project-gallery-item img{height:150px}}
+.project-gallery-item:has(img[src*="neuro-gallery" ]),.project-gallery-item:has(img[src*="magnetic-gallery" ]){grid-column:1/-1}
+.project-gallery-item:has(img[src*="neuro-gallery" ]) img,.project-gallery-item:has(img[src*="magnetic-gallery" ]) img{height:auto;max-height:260px;object-fit:contain;background:#fff}
+@media(max-width:520px){.project-gallery{grid-template-columns:1fr}.project-gallery-item img{height:150px}.project-gallery-item:has(img[src*="neuro-gallery" ]) img,.project-gallery-item:has(img[src*="magnetic-gallery" ]) img{height:auto;max-height:none}}
 `;
 document.head.appendChild(galleryStyle);
