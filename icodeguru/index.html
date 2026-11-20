@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123b3a">
+<title>Latest Trends in Technology 2026 | iCodeGuru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#" data-page="home"><span class="logo">iG</span><span><b>iCodeGuru</b><small>LEARNING PORTAL · 2026</small></span></a>
+<p class="nav-label">MENU</p>
+<nav>
+<button class="nav active" data-page="home">⌂ &nbsp; Home</button>
+<button class="nav" data-page="session">▦ &nbsp; Session Details</button>
+<button class="nav" data-page="assignments">▤ &nbsp; Assignments</button>
+<button class="nav" data-page="recordings">▷ &nbsp; Recorded Lectures</button>
+<button class="nav" data-page="about">ⓘ &nbsp; About</button>
+</nav>
+<div class="side-bottom"><div class="tip"><b>✦ Keep learning</b><p>Small steps every day lead to big progress.</p></div><button id="adminOpen" class="admin-entry">⚙ Admin access</button></div>
+</aside>
+<main>
+<header class="topbar"><button id="menuToggle" class="menu">☰</button><div>iCodeGuru <span>/</span> <b id="crumb">Home</b></div><small>● &nbsp;2026 Learning Session</small></header>
+<div class="content">
+<section class="page active" id="page-home">
+<div class="hero"><div class="hero-copy"><div class="eyebrow">● &nbsp; LEARN · EXPLORE · BUILD</div><h1>Latest Trends in<br><em>Technology 2026</em></h1><p>iCodeGuru is a dynamic learning platform focused on bridging the gap between academia and the tech industry by offering practical, in-demand, and globally relevant courses. To explore more and become part of our learning community...</p><a class="btn light" href="https://icode.guru/join/" target="_blank" rel="noopener">Join iCodeGuru ↗</a><small class="hero-note">● Online learning community &nbsp; · &nbsp; Practical skills for tomorrow</small></div><div class="hero-art"><div class="orbit"></div><div class="orb"><b>iG</b><small>LEARN · CREATE · GROW</small></div><span class="float f1">✦ Future-ready skills</span><span class="float f2">↗ Your next chapter starts here</span></div></div>
+<div class="section-title"><div><label>YOUR LEARNING SPACE</label><h2>Everything you need, in one place.</h2></div><p>Find session information, assignments and lecture resources without the clutter.</p></div>
+<div class="cards"><button class="quick" data-page="session"><i>▦</i><b>Session Details</b><small>Schedule, timing and attendance</small><strong>Explore →</strong></button><button class="quick" data-page="assignments"><i>▤</i><b>Assignments</b><small>Weekly tasks and submission links</small><strong>View assignments →</strong></button><button class="quick" data-page="recordings"><i>▷</i><b>Recorded Lectures</b><small>Revisit sessions and topics</small><strong>Open recordings →</strong></button></div>
+<div class="welcome"><b>✧ &nbsp; Make every session count.</b><span>Join on time, participate actively and keep practising.</span><button data-page="about">About iCodeGuru ↗</button></div>
+</section>
+<section class="page" id="page-session"><div class="intro"><label>PLAN YOUR WEEK</label><h1>Session <em>Details</em></h1><p>Keep track of the weekly schedule and make the most of every live session.</p></div><div class="details"><article><i>◷</i><label>TIMING</label><h2>6:00 PM – 8:00 PM</h2><p>Pakistan Standard Time (PKT)</p></article><article><i>▦</i><label>DAYS</label><h2>Monday to Friday</h2><p>Five learning days every week</p></article><article><i>⌁</i><label>MODE</label><h2>Online Live Sessions</h2><p>Join from wherever you are</p></article></div><div class="notice"><b>!</b><div><strong>Important note</strong><p>Make sure to join on time. Attendance and participation are important for your progress.</p></div></div></section>
+<section class="page" id="page-assignments"><div class="intro"><label>PRACTICE MAKES PROGRESS</label><h1>Weekly <em>Assignments</em></h1><p>Explore each week's tasks and use the provided links to read instructions and submit your work.</p></div><div id="assignmentList" class="assignment-list"></div></section>
+<section class="page" id="page-recordings"><div class="intro"><label>REVISIT & REINFORCE</label><h1>Lecture <em>Recordings</em></h1><p>Access all lecture recordings in one place.</p></div><div class="recording"><div class="recording-art"><span>▷</span><small>LEARN AT YOUR PACE</small></div><div><label>ALL RECORDED LECTURES</label><h2>All Recorded Lectures</h2><p>Open the recordings sheet organized by week and topic.</p><a id="recordingsLink" class="btn primary disabled" href="#" target="_blank" rel="noopener">Open Recordings Sheet ↗</a><small id="recordingsHint" class="hint">The recordings sheet link will be added by the administrator.</small></div></div></section>
+<section class="page" id="page-about"><div class="intro"><label>OUR LEARNING COMMUNITY</label><h1>About <em>iCodeGuru</em></h1><p>Learning that connects knowledge with practical skills.</p></div><div class="about"><div class="logo big">iG</div><div><h2>Learn practical skills. Build with confidence.</h2><p>iCodeGuru empowers students to learn practical programming through structured sessions, hands-on assignments, and curated resources. Stay consistent, participate actively, and use the provided links to submit work and revisit lectures.</p><a href="https://icode.guru/join/" target="_blank" rel="noopener">Explore iCodeGuru ↗</a></div></div></section>
+<footer><div><b>iCodeGuru · Latest Trends in Technology 2026</b><small>Learn something new. Put it into practice.</small></div><div id="socialLinks"></div><a id="feedbackLink" href="#" target="_blank" rel="noopener">Share Feedback ↗</a></footer>
+</div></main></div>
+<div class="backdrop" id="adminModal"><div class="modal"><button class="close" id="adminClose">×</button><label>WEBSITE SETTINGS</label><h2>Admin <em>Dashboard</em></h2><p class="warning">Demo editing mode: changes are saved only in this browser. This is not secure private admin authentication. Do not use this mode for confidential or public production updates.</p>
+<div class="tabs"><button class="tab active" data-tab="assignments">Assignments</button><button class="tab" data-tab="links">Website Links</button></div><div id="adminAssignments"></div>
+<div id="adminLinks" class="hidden"><label>Recordings Google Sheet URL<input id="editRecordings" type="url" placeholder="Paste Google Sheets link"></label><label>Feedback form URL<input id="editFeedback" type="url" placeholder="Paste Google Form link"></label><label>Facebook URL<input id="editFacebook" type="url" placeholder="Optional"></label><label>Instagram URL<input id="editInstagram" type="url" placeholder="Optional"></label><label>LinkedIn URL<input id="editLinkedin" type="url" placeholder="Optional"></label><button id="saveLinks" class="btn primary">Save website links</button></div>
+<div class="modal-foot"><small id="saveStatus">Saved locally in this browser.</small><button id="resetData" class="btn outline">Reset demo content</button></div></div></div>
+<script src="script.js"></script>
+</body></html>
