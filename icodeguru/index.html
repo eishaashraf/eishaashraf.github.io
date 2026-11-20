@@ -36,9 +36,12 @@
 <section class="page" id="page-about"><div class="intro"><label>OUR LEARNING COMMUNITY</label><h1>About <em>iCodeGuru</em></h1><p>Learning that connects knowledge with practical skills.</p></div><div class="about"><div class="logo big">iG</div><div><h2>Learn practical skills. Build with confidence.</h2><p>iCodeGuru empowers students to learn practical programming through structured sessions, hands-on assignments, and curated resources. Stay consistent, participate actively, and use the provided links to submit work and revisit lectures.</p><a href="https://icode.guru/join/" target="_blank" rel="noopener">Explore iCodeGuru ↗</a></div></div></section>
 <footer><div><b>iCodeGuru · Latest Trends in Technology 2026</b><small>Learn something new. Put it into practice.</small></div><div id="socialLinks"></div><a id="feedbackLink" href="#" target="_blank" rel="noopener">Share Feedback ↗</a></footer>
 </div></main></div>
-<div class="backdrop" id="adminModal"><div class="modal"><button class="close" id="adminClose">×</button><label>WEBSITE SETTINGS</label><h2>Admin <em>Dashboard</em></h2><p class="warning">Demo editing mode: changes are saved only in this browser. This is not secure private admin authentication. Do not use this mode for confidential or public production updates.</p>
-<div class="tabs"><button class="tab active" data-tab="assignments">Assignments</button><button class="tab" data-tab="links">Website Links</button></div><div id="adminAssignments"></div>
+<div class="backdrop" id="adminModal"><div class="modal"><button class="close" id="adminClose">×</button><label>WEBSITE SETTINGS</label><h2>Admin <em>Dashboard</em></h2>
+<p class="warning">Sign in with one of the approved Google accounts to manage website content. Visitors can view the published content but cannot edit it.</p>
+<div class="auth-row"><span id="authStatus">Not signed in</span><button id="signInButton" class="btn primary">Sign in with Google</button><button id="signOutButton" class="btn outline hidden">Sign out</button></div>
+<div id="adminEditor" class="hidden"><div class="tabs"><button class="tab active" data-tab="assignments">Assignments</button><button class="tab" data-tab="links">Website Links</button></div><div id="adminAssignments"></div>
 <div id="adminLinks" class="hidden"><label>Recordings Google Sheet URL<input id="editRecordings" type="url" placeholder="Paste Google Sheets link"></label><label>Feedback form URL<input id="editFeedback" type="url" placeholder="Paste Google Form link"></label><label>Facebook URL<input id="editFacebook" type="url" placeholder="Optional"></label><label>Instagram URL<input id="editInstagram" type="url" placeholder="Optional"></label><label>LinkedIn URL<input id="editLinkedin" type="url" placeholder="Optional"></label><button id="saveLinks" class="btn primary">Save website links</button></div>
-<div class="modal-foot"><small id="saveStatus">Saved locally in this browser.</small><button id="resetData" class="btn outline">Reset demo content</button></div></div></div>
-<script src="script.js"></script>
+<div class="modal-foot"><small id="saveStatus">Content is stored securely in Firebase.</small><button id="resetData" class="btn outline">Reset content to defaults</button></div></div>
+</div></div>
+<script type="module" src="script.js"></script>
 </body></html>
