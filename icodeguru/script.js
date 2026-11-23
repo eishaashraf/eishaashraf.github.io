@@ -163,8 +163,19 @@ onAuthStateChanged(auth, user => {
 });
 
 onSnapshot(contentRef, snapshot => {
-  if (snapshot.exists()) data = {...defaults, ...snapshot.data()};
-  else data = JSON.parse(JSON.stringify(defaults));
+  if (snapshot.exists()) {
+    const saved = snapshot.data();
+    data = {...defaults, ...saved};
+    // Ensure the latest Week 1–4 assignment announcements and links appear
+    // even when an older version is already stored in Firestore.
+    const savedAssignments = Array.isArray(saved.assignments) ? saved.assignments : [];
+    data.assignments = defaults.assignments.map((item, i) => {
+      if (i < 4) return {...(savedAssignments[i] || {}), ...item};
+      return {...item, ...(savedAssignments[i] || {})};
+    });
+  } else {
+    data = JSON.parse(JSON.stringify(defaults));
+  }
   render();
   if (isAdmin && $("adminModal").classList.contains("open")) fillAdminForm();
 }, error => {
