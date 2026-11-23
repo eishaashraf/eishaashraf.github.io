@@ -19,12 +19,44 @@ const contentRef = doc(db, "site", "content");
 const ADMIN_EMAILS = ["eisha.ashraf86@gmail.com", "ayeshasajid052@gmail.com"];
 
 const defaults = {
-  assignments: Array.from({length:6}, (_,i) => ({
-    title: "Week " + (i+1) + " Assignment",
-    details: "Add assignment details here using Admin access.",
-    instructions: "",
-    submission: ""
-  })),
+  assignments: [
+    {
+      title: "Assignment No. 1",
+      details: "Assignment No. 1 is now open for submission. Please review the assignment instructions carefully and submit your work through the Google Form.",
+      instructions: "https://docs.google.com/document/d/1qPDgztjt_IcgV7T13TDCpTpM7nY_WOT1GIkZuO8WYN8/edit?usp=sharing",
+      submission: "https://forms.gle/QTbSceDmSDTXdC7n6"
+    },
+    {
+      title: "Assignment No. 2 – GitHub Profile README",
+      details: "Create and customize your GitHub profile README by following the instructions provided in the assignment document. Submit your GitHub profile link through the provided form.",
+      instructions: "https://docs.google.com/document/d/1fU2axF1RX5FEfP6UucVaB35YudkPTTN-y7P1PtcgwS8/edit?usp=sharing",
+      submission: "https://forms.gle/PrvXAGE32AmUMf11A"
+    },
+    {
+      title: "Assignment No. 3 – Real-World Problem & Technology Solution",
+      details: "Identify a real-world problem from your daily life, university, or surroundings and propose a simple technology-based solution. Submit your responses through the provided form.",
+      instructions: "https://docs.google.com/document/d/1BBfBa0tVnMj3_DMJojRyQrluulVKT7uLXWvVsYc-CVU/edit?usp=sharing",
+      submission: "https://forms.gle/iqVN8DVpSGJDKczQA"
+    },
+    {
+      title: "Assignment No. 4 – 10 MCQs",
+      details: "Complete 10 multiple-choice questions based on the concepts covered in the sessions so far. Read the assignment instructions carefully and submit before the deadline.",
+      instructions: "https://docs.google.com/document/d/1B-mRLI4bw7LOtaxPvy0MB5lv5o445H2yag3qC-v2GeU/edit",
+      submission: "https://forms.gle/tjzDEN2rHQw3UzV6A"
+    },
+    {
+      title: "Week 5 Assignment",
+      details: "Add assignment details here using Admin access.",
+      instructions: "",
+      submission: ""
+    },
+    {
+      title: "Week 6 Assignment",
+      details: "Add assignment details here using Admin access.",
+      instructions: "",
+      submission: ""
+    }
+  ],
   recordings: "", feedback: "", facebook: "", instagram: "", linkedin: ""
 };
 let data = JSON.parse(JSON.stringify(defaults));
