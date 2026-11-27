@@ -78,9 +78,6 @@ function link(s,label,cls) {
   return u ? '<a class="small-btn '+cls+'" href="'+u+'" target="_blank" rel="noopener">'+label+' ↗</a>' : '<span class="small-btn secondary">'+label+' · Add link</span>';
 }
 function renderLinks() {
-  const u = url(data.recordings), r = $("recordingsLink");
-  r.href = u || "#"; r.classList.toggle("disabled", !u);
-  $("recordingsHint").textContent = u ? "Recordings are organized in your linked Google Sheet." : "The recordings sheet link will be added by the administrator.";
   const f = url(data.feedback);
   $("feedbackLink").href = f || "#"; $("feedbackLink").style.opacity = f ? 1 : .5;
   $("socialLinks").innerHTML = [["Facebook",data.facebook],["Instagram",data.instagram],["LinkedIn",data.linkedin]]
